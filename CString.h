@@ -42,7 +42,7 @@ namespace raptor
 		// Loops until a zero-terminator is found
 		for (; cStr[idx] != '\0'; ++idx)
 		{
-			// If char isn't between the character range representing 0 to 9, 
+			// If cStr[idx] isn't between the character range representing 0 to 9, 
 			// it doesn't contain purely an int
 			if (cStr[idx] < '0' && cStr[idx] > '9')
 			{
