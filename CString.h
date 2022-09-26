@@ -44,7 +44,7 @@ namespace raptor
 		{
 			// If cStr[idx] isn't between the character range representing 0 to 9, 
 			// it doesn't contain purely an int
-			if (cStr[idx] < '0' && cStr[idx] > '9')
+			if (cStr[idx] < '0' || cStr[idx] > '9')
 			{
 				isAnInt = false;
 				return 0;
